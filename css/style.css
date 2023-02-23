@@ -1,0 +1,100 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /*Font Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');/*Font Inconsolata*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    height: 94vh;
+    width: 96vw;
+    border: 3px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+
+.main {
+    width: 100vw;
+    display: flex;
+}
+
+.container-left__name {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #d7a759;
+}
+
+.container-left__status {
+    font-size: 1.9rem;
+}
+
+.container-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: end;
+    width: 40vw;
+    height: 100vh;
+    align-content: center;
+    background-color: #2f343f;
+}
+
+.container-right {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 2.5rem;
+    width: 60vw;
+    height: 100vh;
+    background-color: #21252b;
+}
+
+.description-code li {
+    /* list-style-type: decimal; */
+    color: white;
+    counter-increment: item ;
+    margin-bottom: 0.3rem;
+}
+
+.description-code li::before {
+    margin-right: 1rem;
+    content: counter(item);
+    color: #565c69;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+}
+
+
+
+@keyframes clignotement {
+    0% {opacity: 1;}
+    49% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.container-left__status-marker {
+    font-size: 2.1rem;
+    animation: clignotement 1s infinite;
+}

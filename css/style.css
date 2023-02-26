@@ -1,0 +1,128 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /*Font Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');/*Font Inconsolata*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inconsolata', monospace;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.color-orange {
+    color: #cb8242;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    height: 94vh;
+    width: 96vw;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #ffffff8f;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+}
+
+.main {
+    display: flex;
+    width: 60vw;
+    background-color: #21252b;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+
+/*HEADER*/
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    background-color: #2f343f;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-height: 25px;
+    transition: all linear;
+}
+
+.logo:hover {
+    filter: blur(1px);
+}
+
+@keyframes twinkle {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.clignottement {
+    animation: twinkle 1s infinite;
+}
+
+.header__denomination {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.header__socials {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 9rem;
+    border: 1px solid #ffffff1f;
+    border-radius: 2px;
+    padding: 1.3rem 2rem;
+}
+
+
+/*MAIN*/
+.main__code {
+    list-style: none;
+    counter-reset: item;
+  }
+ .main__code li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+.main__code li::before {
+    margin-right: 10px;
+    content: counter(item);
+    color: rgba(255, 255, 255, 0.7);
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+
+.main__code-parenthese {
+    color: #f8c611;
+}
+
+.main__code-value {
+    color: #a7ce90;
+}
+
+.main__code-variable {
+    color: #71d0fe;
+}

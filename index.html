@@ -1,58 +1,615 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio de Alex Searha</title>
-</head>
-<body>
-    <header class="header">
-        <h1 class="header__name-title color-orange">Alex Searha</h1>
-        <span class="header__denomination">Developpeur Web Junior<span class="clignottement">|</span></span>
-        <span>
-            <ul class="header__socials">
-                <li> 
-                    <a href="https://www.google.fr" target="_blank">
-                        <img class="logo" src="img/github-logo.webp" alt="logo-github">
-                    </a> 
-                </li>
-                <li>
-                    <a href="https://www.google.fr" target="_blank">
-                        <img class="logo" src="img/linkedin-logo.webp" alt="logo-linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.google.fr" target="_blank">
-                        <img class="logo" src="img/fb-logo.webp" alt="logo-facebook">
-                    </a>
-                </li>
-            </ul>
-        </span>
-    </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Portfolio de Alexis Marouf, développeur web full stack" />
+        <meta name="author" content="Alexis Marouf" />
+        <title>Alexis Marouf - Developpeur Web</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ale</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="btn btn-primary btn-sm me-sm-3 fs-6 fw-bolder" href="#contact">Contactez-moi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="py-5">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-6 align-items-center">
+                        <div class="col-xxl-6 ">
+                            <!-- Header text content-->
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Bonjour, je m'appelle</div></div>
+                                <div class="fs-3 fw-light text-muted">Alexis Marouf et je conçois</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">des applis web performantes!</span></h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="#projects">Projets</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#resume">Parcours</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6">
+                            <!-- Header profile picture-->
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="profile">
+                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
+                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
+                                    <img id="img-avatar" class="profile-img" src="assets/Detourage-Alex.png" alt="photo alexis marouf" />
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About Section-->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">A propos de moi?</span></h2>
+                                <p class="lead fw-light mb-4">Je suis développeur fullstack depuis deux ans</p>
+                                <p class="text-muted">Après une décénie passée dans le monde de l&apos;électronique, au cours de laquelle, 
+                                    j'ai pu développer de solides compétences techniques en développement, tests, formation internationnale, 
+                                    validation et bien d&apos;autres, ma véritable passion s'est éveillée au cours de l&apos;année 2017 : 
+                                    Le developpement web.
+                                    <br>
+                                    Ici, je peux enfindonner libre cours à ma créativité et appliquer mes compétencesen géstion de projet, une perspective 
+                                    qui me motive profondément. C'est pourquoi j&apos;ai décidé de me lancer dans une nouvelle carrière, en totale adéquation 
+                                    avec mes aspirations 
+                                </p>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/alexis-marouf/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="https://github.com/AlexSearha" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5" id="projects">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projets</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">AdeuxPas</h2>
+                                            <p>...est un générateur d&apos;idées de séjours moins traditionnel. Une façon de redécouvrir 
+                                                sa région en se limitant à un rayon de 200km et en laissant un peu plus de place au “hasard” 
+                                                Cette application offre une autre manière d’envisager ses séjours, d&apos;intégrer un peu de spontanéité tout en 
+                                                limitant son empreinte carbone.</p>
+                                                <div class="d-flex flex-row flex-wrap gap-2">
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">React</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">TypeScript</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Redux</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">MUI</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">NodeJS</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">ExpressJS</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">POSTGRESQL</div></div>
+                                                    <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Leaflet</div></div>
+                                            </div>
+                                        </div>
+                                        <img class="card-img"  src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Katia Lemaire Sophrologue</h2>
+                                            <p>...est une plateforme de reservation de créneaux en ligne d'un professionnel de médecine alternative - Sophrologie</p>
+                                            <div class="d-flex flex-row flex-wrap gap-2">
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">React</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">TypeScript</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Redux</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">MUI</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">NodeJS</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">ExpressJS</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">POSTGRESQL</div></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Publicitizz -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Publicitizz</h2>
+                                            <p>...est un site web e-commerce spécialisé dans la papetrie et customization de différents produits (stickers, poster,etc.)</p>
+                                            <div class="d-flex flex-row flex-wrap gap-2">
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Wordpress</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Woocommerce</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">HTML</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CSS</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">PHP</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CPANEL</div></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Les Yeux Fermés -->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Les Yeux Fermés</h2>
+                                            <p>...est un site web e-commerce spécialisé dans la vente de bougie parfumées à tendance lithotherapique</p>
+                                            <div class="d-flex flex-row flex-wrap gap-2">
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Wordpress</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Woocommerce</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">HTML</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CSS</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">PHP</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CPANEL</div></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 4-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-start">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Seasons</h2>
+                                            <p>...est un site vitrine présentant un groupe de musique contemporaine</p>
+                                            <div class="d-flex flex-row flex-wrap gap-2">
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">Wordpress</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">HTML</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CSS</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">MYSQL</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">PHP</div></div>
+                                                <div class="badge bg-gradient-primary-to-secondary"><div class="text-uppercase">CPANEL</div></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Développons un projet ensemble?</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="#contact">Contactez-moi</a>
+                    </div>
+                </div>
+            </section>
 
-    <main class="main">
-        <ol class="main__code">
-            <li>
-                <span class="main__code-parenthese">{</span>
-            </li>
-            <li>
-                <span class="main__code-variable">name</span>
-                <span class="main__code-normal">:</span>
-                <span class="main__code-value">Alex Searha</span>
-            </li>
-            <li>e</li>
-            <li>r</li>
-            <li>z</li>
-            <li>y</li>
-            <li>a</li>
-            <li>y</li>
-            <li>q</li>
-            <li>z</li>
-        </ol>
-    </main>
-
-</body>
+            <div id="resume" class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Parcours Professionnel</span></h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                                <a class="btn btn-primary px-4 py-3" target="_blank" href="assets/Alexis-MAROUF-CV-2023-Developpeur-web.pdf">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Telecharger mon CV
+                                </a>
+                            </div>
+                            <!-- STmicroelectronics -->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2021 - 2022</div>
+                                                <div class="small fw-bolder">Animateur de formation et technicien de maintenance industriel</div>
+                                                <div class="small text-muted">STMicroelectronics</div>
+                                                <div class="small text-muted">Crolles - Isère</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Animateur de formation électricité/électronique de premier niveau et maintenance
+                                            opérationnelle des différents équipement de fabrication de circuits intégrés en salle blanche
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Thales Optronique -->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2016 - 2021</div>
+                                                <div class="small fw-bolder">Formateur et technicien intégrateur nacelle Damoclès</div>
+                                                <div class="small text-muted">Thales Optronique</div>
+                                                <div class="small text-muted">Elancourt - Ile de France</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Formateur sur les bancs de test de tronçons centraux TMP sur site client AEC (Ryad - Arabie Saoudite) et intégrateur sur les TC
+                                            et nacelles Damoclès, tests, investigations et rédaction de rapports
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Zodiac Aerospace -->
+                             <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2014 - 2016</div>
+                                                <div class="small fw-bolder">Technicien Hardware</div>
+                                                <div class="small text-muted">Zodiac Aerospace pour Altran</div>
+                                                <div class="small text-muted">Plaisir - Ile de France</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Conception analogique et numérique d'une carte d&apos;interface entrée/sortie génerique modulaire
+                                            , tests sur bancs, câblage, rédaction de rapports de test.
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PARROT -->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2012 - 2014</div>
+                                                <div class="small fw-bolder">Technicien supérieur Hardware</div>
+                                                <div class="small text-muted">Parrot SA</div>
+                                                <div class="small text-muted">Paris - Ile de France</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Développement et tests hardware sur de multiples projets multimédia - casque BT, autoradio
+                                            tactile, etc, câblage, résdaction de rapport de test.
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- RENAULT -->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">2012</div>
+                                                <div class="small fw-bolder">Technicien électronique</div>
+                                                <div class="small text-muted">Renault pour Segula</div>
+                                                <div class="small text-muted">Guyancourt - Ile de France</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Installation d&apos;installation d'un banc de test PIE, câblag, maintenance préventive et curative.
+                                        </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Education Section-->
+                        <section>
+                            <!-- Skillset Card-->
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-primary fw-bolder mb-0">Skills</h2>
+                            </div>
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <!-- OS-->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-laptop"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">OS</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Linux</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Windows</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Language -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-megaphone"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Language</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">TypeScript</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SASS</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Markdown</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Framworks et plus -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-brush"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Framework & plus</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Redux</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">React Router</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">VueJS</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">NodeJS</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ExpresJS</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Sequelize</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Material-UI</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Tailwind CSS</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Bootstrap</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JWT</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Database -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-brush"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Framework & plus</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PostgreSQL</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MongoDB</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQL</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">FireBase</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Tests -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-braces"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Test</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Jest</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Mocha</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Package Manager -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-arrow-down-circle"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Package Manager</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Yarn</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Npm</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Cloud & Network -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-cloud"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Cloud & Network</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Nextcloud</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CloudFlare</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Design & Média -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-palette"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Design & Médias</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Photoshop</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">AfterEffect</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Premiere Pro</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Communication -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-link-45deg"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Communication</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Slack</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Discord</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Teams</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Zoom</div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Other -->
+                                    <div class="mb-5">
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-megaphone"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Autres</span></h3>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Git</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">GitLab</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">GitHub</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">VScode</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Stripe</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Stack Overflow</div></div>
+                                        </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Google Analytics</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Écoles & Formations</h2>
+                            <!-- Education Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2023</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">O&apos;Clock</div>
+                                                    <div class="small text-muted">Paris, Île de France</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Developement Web</div>
+                                                    <div class="small text-muted">Spécialisation React</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>J'&apos;ai suivi une formation de 6 mois en tant que développeur web 
+                                            avec une spécialisation en React. Cette formation intensive m'a permis de consolider les compétences 
+                                            essentielles que j&apos;ai apprise depuis 2017 pour la création d'applications web interactives et performantes 
+                                            en utilisant React, HTML, CSS et TypeScript/JavaScript.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Education Card 2-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-2 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2008 - 2010</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">BTS Systèmes Électroniques</div>
+                                                    <div class="small text-muted">Nogent-sur-Marne, Val de Marne </div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Conception électronique</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>J'ai suivi un cursus de deux ans au cours duquel j'ai acquis les bases de la conception, 
+                                            de la maintenance et de la réparation des systèmes électroniques. J'ai appris à me familiariser avec les composants électroniques, 
+                                            les circuits, les microcontrôleurs et les systèmes embarqués.</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Divider-->
+                        <div class="pb-5"></div>
+                        <!-- Skills Section-->
+                        <section id="contact">
+                            <div class="container">
+                                <!-- Contact form-->
+                                <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                                    <div class="text-center mb-5">
+                                        <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                                        <h1 class="fw-bolder">Formulaire de contact</h1>
+                                        <p class="lead fw-normal text-muted mb-0">Travaillons ensemble!</p>
+                                    </div>
+                                    <div class="row gx-5 justify-content-center">
+                                        <div class="col-lg-8 col-xl-6">
+                                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                                <!-- Name input-->
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                                    <label for="name">Nom</label>
+                                                    <div class="invalid-feedback" data-sb-feedback="name:required">Votre nom est requis.</div>
+                                                </div>
+                                                <!-- Email address input-->
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                                    <label for="email">Email</label>
+                                                    <div class="invalid-feedback" data-sb-feedback="email:required">Un Email est requis.</div>
+                                                    <div class="invalid-feedback" data-sb-feedback="email:email">l&apos;email n'est pas valide.</div>
+                                                </div>
+                                                <!-- Phone number input-->
+                                                <div class="form-floating mb-3">
+                                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                                    <label for="phone">Téléphone</label>
+                                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Votre numéro de téléphone est requis.</div>
+                                                </div>
+                                                <!-- Message input-->
+                                                <div class="form-floating mb-3">
+                                                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                                    <label for="message">Message</label>
+                                                    <div class="invalid-feedback" data-sb-feedback="message:required">Un message est requis.</div>
+                                                </div>
+                                                <!-- has successfully submitted-->
+                                                <div class="d-none" id="submitSuccessMessage">
+                                                    <div class="text-center mb-3">
+                                                        <div class="fw-bolder">Votre Email à bien été envoyé!</div>
+                                                        To activate this form, sign up at
+                                                        <br />
+                                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                                    </div>
+                                                </div>
+                                                <!-- Submit error message-->
+                                                <!---->
+                                                <!-- This is what your users will see when there is-->
+                                                <!-- an error submitting the form-->
+                                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Un erreur est apparue lors de l'envoi du message!</div></div>
+                                                <!-- Submit Button-->
+                                                <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Envoyer</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright 2023 &copy; Alexis Marouf - Developpeur Web</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="confidentiality.html">Condidentialité</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

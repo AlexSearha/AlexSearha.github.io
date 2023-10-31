@@ -9,7 +9,7 @@ function sendEmail(event) {
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
   const textMessage = document.getElementById('message').value;
-  if(!name || ! !email || !phone || !textMessage){
+  if(name == '' || email == '' || phone == '' || textMessage == ''){
     document.getElementById('formIsEmpty').className = 'd-block';
   }else{
     document.getElementById('formIsEmpty').className = 'd-none';

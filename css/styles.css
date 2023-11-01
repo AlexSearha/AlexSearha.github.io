@@ -11760,7 +11760,8 @@ html {
     width: 35vw;
   }
   .profile .profile-img {
-    height: 38vw;
+    height: 35vw;
+    max-height: 600px;
   }
   .profile .dots-1 {
     width: 1.5vw;
